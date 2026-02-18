@@ -2,7 +2,7 @@ import React from 'react';
 
 const UrgencyBar = () => {
   return (
-    <div className="relative w-full z-[60] bg-[#d19e1f] shadow-lg border-b border-white/20 flex flex-col md:flex-row items-center justify-center px-4 py-3 md:py-4 min-h-[60px] gap-2">
+    <div className="relative w-full z-[60] bg-[#8C6B1F] shadow-lg border-b border-white/20 flex flex-col md:flex-row items-center justify-center px-4 py-3 md:py-4 min-h-[60px] gap-2">
       
       <div className="flex flex-col md:flex-row items-center text-center gap-1 md:gap-3">
         <span className="text-white font-bold text-sm md:text-base drop-shadow-md font-sans">
