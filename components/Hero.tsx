@@ -26,7 +26,7 @@ const Hero = () => {
       />
 
       <p className="text-[#B8B8B8] text-sm md:text-base max-w-2xl mb-8 leading-relaxed">
-        Especial de Quaresma São 40 Dias de Oração e Combate Espiritual Pela Libertação da Sua Casa.
+        Especial de Quaresma São 9 Dias de Oração e Combate Espiritual Pela Libertação da Sua Casa.
       </p>
 
       <Button 
