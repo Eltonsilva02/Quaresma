@@ -15,7 +15,7 @@ import UrgencyBar from './components/UrgencyBar';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#050505] text-gray-200 font-sans selection:bg-red-900 selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#000000] text-[#B8B8B8] font-sans selection:bg-[#8C6B1F] selection:text-white overflow-x-hidden">
       <UrgencyBar />
       <main>
         <Hero />
@@ -23,12 +23,12 @@ export default function App() {
         <VisionSection />
         <WhatYouGet />
         <HowItWorks />
-        <div className="py-12 bg-neutral-900/30">
+        <div className="py-12 bg-[#0F1E3A] border-t border-b border-[#8C6B1F]/30">
             <div className="max-w-4xl mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold mb-4">Por que isso é <span className="text-red-500">diferente</span>?</h2>
-                <p className="text-gray-400 mb-2">Esta novena não substitui tratamento médico.<br />Mas fortalece espiritualmente quem está lutando e quem ama.</p>
-                <p className="text-gray-400 mb-2">Você deixa de se sentir impotente. Você passa a agir.</p>
-                <p className="text-red-500 font-medium">Você sente que está protegendo sua casa.</p>
+                <h2 className="text-3xl font-bold mb-4 text-white">Por que isso é <span className="text-[#8C6B1F]">diferente</span>?</h2>
+                <p className="text-[#B8B8B8] mb-2">Esta novena não substitui tratamento médico.<br />Mas fortalece espiritualmente quem está lutando e quem ama.</p>
+                <p className="text-[#B8B8B8] mb-2">Você deixa de se sentir impotente. Você passa a agir.</p>
+                <p className="text-[#8C6B1F] font-medium">Você sente que está protegendo sua casa.</p>
             </div>
         </div>
         <Benefits />

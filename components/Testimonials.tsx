@@ -47,7 +47,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-[#080808]">
+    <section className="py-20 px-4 bg-[#0F1E3A] border-t border-[#8C6B1F]/20">
       <style>{`
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
@@ -59,10 +59,10 @@ const Testimonials = () => {
       `}</style>
       <div className="max-w-6xl mx-auto text-center relative">
         <div className="flex justify-center mb-4">
-            <Users className="w-10 h-10 text-red-600" />
+            <Users className="w-10 h-10 text-[#8C6B1F]" />
         </div>
-        <h3 className="text-2xl md:text-3xl font-bold mb-12">
-          Testemunhos de <span className="text-red-500">Graças Alcançadas</span>
+        <h3 className="text-2xl md:text-3xl font-bold mb-12 text-white">
+          Testemunhos de <span className="text-[#8C6B1F]">Graças Alcançadas</span>
         </h3>
 
         {/* Carousel Container */}
@@ -70,7 +70,7 @@ const Testimonials = () => {
            {/* Navigation Buttons - Visible on all screens */}
            <button 
              onClick={() => scroll('left')}
-             className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-20 p-2 bg-black/60 hover:bg-red-600 rounded-full text-white transition-all backdrop-blur-md border border-white/10 flex items-center justify-center opacity-80 hover:opacity-100"
+             className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-20 p-2 bg-black/60 hover:bg-[#8C6B1F] rounded-full text-white transition-all backdrop-blur-md border border-white/10 flex items-center justify-center opacity-80 hover:opacity-100"
              aria-label="Anterior"
            >
              <ChevronLeft className="w-6 h-6" />
@@ -78,7 +78,7 @@ const Testimonials = () => {
            
            <button 
              onClick={() => scroll('right')}
-             className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-20 p-2 bg-black/60 hover:bg-red-600 rounded-full text-white transition-all backdrop-blur-md border border-white/10 flex items-center justify-center opacity-80 hover:opacity-100"
+             className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-20 p-2 bg-black/60 hover:bg-[#8C6B1F] rounded-full text-white transition-all backdrop-blur-md border border-white/10 flex items-center justify-center opacity-80 hover:opacity-100"
              aria-label="Próximo"
            >
              <ChevronRight className="w-6 h-6" />
@@ -92,7 +92,7 @@ const Testimonials = () => {
              {testimonialImages.map((img, idx) => (
                <div 
                  key={idx} 
-                 className="snap-center shrink-0 w-[85vw] md:w-[300px] rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 bg-[#111]"
+                 className="snap-center shrink-0 w-[85vw] md:w-[300px] rounded-xl overflow-hidden border border-[#8C6B1F]/30 shadow-2xl transition-transform hover:scale-[1.02] duration-300 bg-[#000000]"
                >
                  <img 
                    src={img} 
@@ -105,7 +105,7 @@ const Testimonials = () => {
            </div>
         </div>
         
-        <p className="text-gray-500 text-xs mt-[-10px] animate-pulse">
+        <p className="text-[#B8B8B8] text-xs mt-[-10px] animate-pulse">
           Deslize para ver mais
         </p>
       </div>

@@ -57,27 +57,27 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-[#0d0d0d]">
+    <section className="py-20 px-4 bg-[#000000]">
       <div className="max-w-3xl mx-auto">
-        <h3 className="text-3xl font-bold text-center mb-12">
-          Perguntas <span className="text-red-500">Frequentes</span>
+        <h3 className="text-3xl font-bold text-center mb-12 text-white">
+          Perguntas <span className="text-[#8C6B1F]">Frequentes</span>
         </h3>
 
         <div className="space-y-3">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="bg-[#161616] border border-white/5 rounded-lg overflow-hidden">
+            <div key={idx} className="bg-[#0a0a0a] border border-[#8C6B1F]/20 rounded-lg overflow-hidden">
               <button 
                 onClick={() => toggle(idx)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-white/5 transition-colors focus:outline-none"
+                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-[#8C6B1F]/10 transition-colors focus:outline-none"
               >
-                <span className="font-bold text-sm md:text-base text-gray-200">{faq.q}</span>
-                <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} />
+                <span className="font-bold text-sm md:text-base text-white">{faq.q}</span>
+                <ChevronDown className={`w-5 h-5 text-[#8C6B1F] transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} />
               </button>
               
               <div 
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="px-6 pb-6 text-sm text-gray-400 border-t border-white/5 pt-4">
+                <div className="px-6 pb-6 text-sm text-[#B8B8B8] border-t border-[#8C6B1F]/20 pt-4">
                   {faq.a}
                 </div>
               </div>

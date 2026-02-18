@@ -18,10 +18,12 @@ const Button: React.FC<ButtonProps> = ({
   const baseStyles = "font-bold rounded-lg transition-all duration-200 flex items-center justify-center gap-2 transform active:scale-95";
   
   const variants = {
-    primary: "bg-gradient-to-b from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white shadow-[0_4px_14px_0_rgba(220,38,38,0.39)] border-t border-red-500",
-    secondary: "bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm",
-    outline: "border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white",
-    success: "bg-green-600 hover:bg-green-700 text-white shadow-[0_4px_14px_0_rgba(22,163,74,0.39)] border-t border-green-500"
+    // Agora o primary segue a cor verde solicitada #1F7A3E
+    primary: "bg-[#1F7A3E] hover:bg-[#249B4E] text-white shadow-[0_4px_14px_0_rgba(31,122,62,0.39)] border-t border-[#34D399]/30",
+    secondary: "bg-[#0F1E3A] hover:bg-[#162a52] text-[#B8B8B8] border border-[#8C6B1F]/30 hover:text-white",
+    outline: "border border-[#8C6B1F] text-[#8C6B1F] hover:bg-[#8C6B1F] hover:text-white",
+    // Mantendo success consistente com o primary para este design
+    success: "bg-[#1F7A3E] hover:bg-[#249B4E] text-white shadow-[0_4px_14px_0_rgba(31,122,62,0.39)] border-t border-[#34D399]/30"
   };
 
   const sizes = {
